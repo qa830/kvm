@@ -2,5 +2,6 @@ dist: bionic
 
 install:
 - egrep -c '(vmx|svm)' /proc/cpuinfo
-- sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients
-- kvm-ok
+# - sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients
+# - kvm-ok
+- sleep 300
