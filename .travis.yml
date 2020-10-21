@@ -4,4 +4,5 @@ install:
 - egrep -c '(vmx|svm)' /proc/cpuinfo
 # - sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients
 # - kvm-ok
-- sleep 300
+- __dots() { while true ; do echo -en . ; sleep 1 ; done } ; __dots &
+- sleep 6000
